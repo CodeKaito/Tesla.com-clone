@@ -67,6 +67,8 @@ section .content {
     padding-bottom: 15vh;
     text-align: center;
     text-decoration: none;
+    display: grid;
+    grid-template-rows: min-content min-content auto min-content min-content;
 }
 
 section h1 {
@@ -77,4 +79,26 @@ section h1 {
 section a{
     color: inherit;
     text-decoration: none;
+}
+
+section .buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section .buttons a{
+    display: block;
+    color: inherit;
+    background-color: #eee;
+    padding: 12px 50px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+section .content-buttons {
+    display: flex;
+    flex-direction: flex-end;
 }
